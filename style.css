@@ -1,0 +1,13 @@
+.body{
+    background-image: url("rdr.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    background-color: #ff0000; /* Cambia el color según tus preferencias */
+}
+
+.resaltar{
+    background-color: yellow;
+}
