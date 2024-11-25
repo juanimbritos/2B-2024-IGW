@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Selectores y Pseudoclases</title>
+    <style>
+        /* Estilos para el cuerpo de la página */
+        body {
+            background-color: #ffffff;  /* Cambiar el fondo de la página */
+            font-family: 'Arial', sans-serif;  /* Establecer el tipo de letra */
+            font-size: 16px;  /* Establecer el tamaño del texto */
+            text-align: center;  /* Alineación del texto al centro */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el encabezado */
+        h1 {
+            background-color: #0051ff;  /* Fondo azul para el encabezado */
+            color: rgb(7, 6, 6);  /* Color blanco para el texto */
+            padding: 20px;
+        }
+
+        /* Estilos para los párrafos */
+        p {
+            color: #000000;  /* Texto en gris oscuro */
+            font-size: 18px;  /* Tamaño de texto para los párrafos */
+            line-height: 1.6;  /* Altura de línea para mejorar la legibilidad */
+        }
+
+        /* Estilos para las listas */
+        ul {
+            list-style-type: none;  /* Eliminar los puntos de la lista */
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;  /* Separación entre los elementos de la lista */
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            color: #0056b3;  /* Color azul para los enlaces */
+            text-decoration: none;  /* Eliminar subrayado en los enlaces */
+            font-weight: bold;  /* Texto en negrita */
+            padding: 5px 10px;
+            display: inline-block;  /* Para poder aplicar el padding */
+            transition: all 0.3s ease;  /* Efecto suave al pasar el cursor */
+        }
+
+        /* Efecto hover en los enlaces */
+        a:hover {
+            color: #ff6600;  /* Cambiar el color del texto al pasar el cursor */
+            text-decoration: underline;  /* Subrayar el enlace al pasar el cursor */
+        }
+
+        /* Efecto active en los enlaces */
+        a:active {
+            color: #cc3300;  /* Cambiar el color al hacer clic */
+            transform: scale(0.95);  /* Reducir ligeramente el tamaño */
+        }
+
+        /* Estilos para el botón */
+        button {
+            background-color: #28a745;  /* Fondo verde para el botón */
+            color: white;  /* Texto blanco */
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;  /* Bordes redondeados */
+            cursor: pointer;  /* Cambiar el cursor a mano */
+            transition: all 0.3s ease;  /* Transición suave */
+        }
+
+        /* Efecto hover en el botón */
+        button:hover {
+            background-color: #218838;  /* Fondo verde más oscuro al pasar el cursor */
+        }
+
+        /* Efecto active en el botón */
+        button:active {
+            background-color: #1e7e34;  /* Fondo verde aún más oscuro al hacer clic */
+            transform: scale(0.98);  /* Efecto de "presionar" el botón */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Estilo para el encabezado */
+        h1 {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Estilo para el párrafo con id="parrafo1" */
+        #parrafo1 {
+            color: #333;
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        /* Estilo para el párrafo con id="parrafo2" */
+        #parrafo2 {
+            color: #006600;
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        /* Estilo para el botón con id="boton" */
+        #boton {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        /* Estilo hover para el botón */
+        #boton:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilo para el contenedor con id="contenedor" */
+        #contenedor {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><u>Ejemplo de Interactividad con Hover y Active</u></h1>
+    </header>
+
+    <section>
+        <h2>Enlaces Interactivos:</h2>
+        <p>Haz clic o pasa el cursor sobre los siguientes enlaces:</p>
+        <a href="https://futbol-11.com/">Enlace 1</a><br>
+        <a href="https://youtu.com/">Enlace 2</a><br>
+        <a href="https://chatgpt.com/">Enlace 3</a><br>
+    </section>
+
+    <section>
+        <h2>Botón Interactivo:</h2>
+        <button type="button" onclick="alert('¡Botón clickeado!')">Haz clic aquí</button>
+    </section>
+    
+    <header>
+        <h1><u>Ejemplo de Uso de ID en HTML</u></h1>
+    </header>
+
+    <section id="contenedor">
+        <h2>Contenido Principal</h2>
+        <p id="parrafo1">Este es el primer párrafo con un <strong>ID único</strong> que le aplica un estilo especial.</p>
+        <p id="parrafo2">Este es el segundo párrafo, también con un <strong>ID</strong> diferente.</p>
+        <button id="boton" onclick="alert('¡Botón clickeado!')">Haz clic aquí</button>
+    </section>
+</body>
+</html>
